@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --color-ink: #1a1814;
+  --color-paper: #f3efe6;
+  --color-card: #fbf8f2;
+  --color-card-2: #efe8db;
+  --color-line: #e3d9c8;
+  --color-moss: #1e4d3a;
+  --color-moss-2: #2f6b50;
+  --color-brass: #a56b32;
+  --color-good: #1c6b45;
+  --color-bad: #8e342c;
+  --color-muted: #6e665c;
+  --color-warn: #8a5a12;
+  --radius-sm: 0.4rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.15rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+}
+
+.lot-plate {
+  background-color: var(--color-moss);
+  background-image:
+    linear-gradient(145deg, transparent 42%, color-mix(in oklab, var(--color-brass) 75%, transparent) 42.4% 43.2%, transparent 43.6%),
+    linear-gradient(160deg, var(--color-moss-2), var(--color-moss) 55%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+  .print-sheet { box-shadow: none !important; }
+}

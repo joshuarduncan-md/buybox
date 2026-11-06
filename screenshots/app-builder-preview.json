@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Lotwright",
+      "hasCanvas": false,
+      "bodyTextLen": 834,
+      "bodyTextHash": "b3891d9ef8837e74921be74cfa8afc7eecb521547671ac579bf7e1787f3ec474",
+      "bodyTextPrefix": "Lotwright UNDERWRITING DESK Desk Import Compare Buy box Library ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Lotwright",
+      "hasCanvas": false,
+      "bodyTextLen": 834,
+      "bodyTextHash": "b3891d9ef8837e74921be74cfa8afc7eecb521547671ac579bf7e1787f3ec474",
+      "bodyTextPrefix": "Lotwright UNDERWRITING DESK Desk Import Compare Buy box Library ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
